@@ -1,0 +1,23 @@
+<html>
+<body>
+
+    <div class="login">
+        <h1>Predict Charges</h1>
+        <!--Main Input For Receving Query to our ML-->
+        <form action="http://127.0.0.1:5000/predict"method="post">
+            <input type = "number" name = "age" placeholder="Age" required=""required/>
+            <input type="text" name = "sex" placeholder="Sex"/>
+            <input type="number" name = "bmi" placeholder="BMI"/>
+            <input type="number" name = "children" placeholder="Numbr of children"/>
+            <input type="text" name = "smoker" placeholder=" Smoker Yes or No"/>
+            <input type="text" name = "region" placeholder="Region"/>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">charges</button>
+
+        </form>
+        <br>
+        <br>
+        {{ charges }}
+    </div>
+</body>
+</html>
